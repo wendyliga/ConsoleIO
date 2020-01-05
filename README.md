@@ -9,7 +9,7 @@ Using the Swift Package Manager
 To install ConsoleIO for use in a Swift Package Manager-powered tool, add ConsoleIO as a dependency to your Package.swift file. For more information, please see the Swift Package Manager documentation.
 
 ```
-.package(url: "https://github.com/wendyliga/ConsoleIO", from: "1.0.0")
+.package(url: "https://github.com/wendyliga/ConsoleIO.git", from: "1.0.0")
 ```
 
 ## How to Use
