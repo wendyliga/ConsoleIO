@@ -51,7 +51,7 @@ with:
 - validator: your rules that determine is current result is what you wish your user input or not
 - failedToValidate: any action you want to do after failed to validation
 
-`Note: if user failed to satisfied validator with what user inputted, the ConsoleIO will automatically ask the question again, untuk validator is satisfied, if you want to put some default value, check another example below.` 
+`Note: if user failed to satisfied validator with what user inputted, the ConsoleIO will automatically ask the question again, until validator is satisfied, if you want to put some default value, check another example below.` 
 
 #### With Default Value
 Asking for input with default value
