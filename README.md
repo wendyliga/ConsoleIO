@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://travis-ci.org/wendyliga/ConsoleIO">
-        <img src="https://travis-ci.org/wendyliga/ConsoleIO.svg?branch=master" alt="BuddyBuild" />
+        <img src="https://travis-ci.org/wendyliga/ConsoleIO.svg?branch=master" alt="ConsoleIO" />
     </a> 
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
@@ -14,8 +14,9 @@
     </a>
 </p>
 
+<img src="assets/preview.gif" width="1000" max-width="75%" alt=Preview />
 
-Swift Console Helper for Input and Output
+Swift Console Helper for Input and Output. Using ConsoleIO you can easily create your CLI app with Swift.ConsoleIO provide you with flexibility to create your input and output and validation of your input/output
 
 ## Installation
 Using the Swift Package Manager
@@ -23,12 +24,15 @@ Using the Swift Package Manager
 To install ConsoleIO for use in a Swift Package Manager-powered tool, add ConsoleIO as a dependency to your Package.swift file. For more information, please see the Swift Package Manager documentation.
 
 ```
-.package(url: "https://github.com/wendyliga/ConsoleIO.git", from: "1.0.0")
+.package(url: "https://github.com/wendyliga/ConsoleIO.git", from: "1.0.1")
 ```
 
 ## How to Use
 ### Input
 #### Without Default Value
+
+
+<img src="assets/non_default_value_example.jpg" width="1000" max-width="75%" alt=Example />
 
 ```swift
 import ConsoleIO
@@ -55,6 +59,8 @@ with:
 
 #### With Default Value
 Asking for input with default value
+
+<img src="assets/default_value_example.jpg" width="1000" max-width="75%" alt=Example />
 
 ```swift
 import ConsoleIO
