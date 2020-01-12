@@ -1,5 +1,19 @@
-# ConsoleIO
-[![Build Status](https://travis-ci.org/wendyliga/ConsoleIO.svg?branch=master)](https://travis-ci.org/wendyliga/ConsoleIO)
+<p align="center">
+    <img src="assets/consoleIO_logo.png" width="1000" max-width="75%" alt=“ConsoleIO” />
+</p>
+
+<p align="center">
+    <a href="https://travis-ci.org/wendyliga/ConsoleIO">
+        <img src="https://travis-ci.org/wendyliga/ConsoleIO.svg?branch=master" alt="BuddyBuild" />
+    </a> 
+    <a href="https://swift.org/package-manager">
+        <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
+    </a>
+    <a href="https://twitter.com/wendyliga">
+        <img src="https://img.shields.io/badge/contact-@wendyliga-blue.svg?style=flat" alt="Twitter: @wendyliga" />
+    </a>
+</p>
+
 
 Swift Console Helper for Input and Output
 
@@ -37,7 +51,7 @@ with:
 - validator: your rules that determine is current result is what you wish your user input or not
 - failedToValidate: any action you want to do after failed to validation
 
-`Note: if user failed to satisfied validator with what user inputted, the ConsoleIO will automatically ask the question again, untuk validator is satisfied, if you want to put some default value, check another example below.` 
+`Note: if user failed to satisfied validator with what user inputted, the ConsoleIO will automatically ask the question again, until validator is satisfied, if you want to put some default value, check another example below.` 
 
 #### With Default Value
 Asking for input with default value
