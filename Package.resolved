@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftKit",
+        "repositoryURL": "https://github.com/wendyliga/SwiftKit.git",
+        "state": {
+          "branch": null,
+          "revision": "29671cab4ee696755375e39d0b35ca23d6ddd83a",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

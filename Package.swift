@@ -10,10 +10,13 @@ let package = Package(
             name: "ConsoleIO",
             targets: ["ConsoleIO"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/wendyliga/SwiftKit.git", from: "1.1.0"),
+    ],
     targets: [
         .target(
             name: "ConsoleIO",
-            dependencies: []),
+            dependencies: ["SwiftKit"]),
         .testTarget(
             name: "ConsoleIOTests",
             dependencies: ["ConsoleIO"]),
