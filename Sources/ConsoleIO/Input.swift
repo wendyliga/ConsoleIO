@@ -62,11 +62,12 @@ public func input<T>(_ message: String, defaultValue: T, validator: (T) -> Bool,
             return ConsoleIO.input(message, defaultValue: defaultValue, validator: validator, checkValidationResult: checkValidationResult)
         }
         
+        // save user input as result
         result = userInput
+    } else {
+        // use default value
+        result = defaultValue
     }
-    
-    // use default value
-    result = defaultValue
     
     // execute after validation action
     defer {
