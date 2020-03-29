@@ -43,6 +43,7 @@ import SwiftKit
     }
     ```
  */
+@discardableResult
 public func input<T>(_ message: String, defaultValue: T, validator: ((T) -> Bool)? = nil, checkValidationResult: ((_ result: T,_ validationResult: Bool) -> Void)? = nil, afterValidation: ((T) -> Void)? = nil) -> T {
     // output message
     output(message)
@@ -95,6 +96,7 @@ Example:
    }
    ```
 */
+@discardableResult
 public func input<T>(_ message: String, validator: (T) -> Bool, failedToValidate executeFailedValidationAction: (() -> Void)?) -> T {
     // output message
     output(message)
