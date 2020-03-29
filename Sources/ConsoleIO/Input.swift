@@ -43,7 +43,7 @@ import SwiftKit
     }
     ```
  */
-public func input<T>(_ message: String, defaultValue: T, validator: (T) -> Bool, checkValidationResult: ((_ result: T,_ validationResult: Bool) -> Void)? = nil, afterValidation: ((T) -> Void)? = nil) -> T {
+public func input<T>(_ message: String, defaultValue: T, validator: ((T) -> Bool)? = nil, checkValidationResult: ((_ result: T,_ validationResult: Bool) -> Void)? = nil, afterValidation: ((T) -> Void)? = nil) -> T {
     // output message
     output(message)
     
@@ -51,7 +51,7 @@ public func input<T>(_ message: String, defaultValue: T, validator: (T) -> Bool,
     var result: T
     
     if let userInput = readLine()?.nonEmpty as? T {
-        let validationResult = validator(userInput)
+        let validationResult = validator?(userInput) ?? true
         
         // execute action after validation
         checkValidationResult?(userInput, validationResult)
