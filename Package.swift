@@ -11,7 +11,7 @@ let package = Package(
             targets: ["ConsoleIO"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/wendyliga/SwiftKit.git", from: "1.1.0"),
+        .package(url: "https://github.com/wendyliga/SwiftKit.git", from: "2.0.0"),
     ],
     targets: [
         .target(
